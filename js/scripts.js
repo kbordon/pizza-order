@@ -1,7 +1,15 @@
 function Pizza(item, size){
   this.topping = item;
   this.size = size;
-  this.price = 0;
+  this.price = 14;
+  this.quantity = 1;
+}
+
+Pizza.prototype.getPrice = function () {
+  if (this.topping.length > 0) {
+    this.price += ((this.topping.length) * 0.50);
+  }
+  return this.price;
 }
 
 $(document).ready(function() {
@@ -15,7 +23,8 @@ $(document).ready(function() {
     var pizzaSize = $("input:radio:checked").val();
 
     var pizzaOrder = new Pizza(pizzaTopping, pizzaSize);
-    console.log(pizzaOrder);
+    $("#subtotal-list").empty();
+    $("#subtotal-list").append("$" + pizzaOrder.getPrice().toFixed(2) + "<br>");
   });
 
 

@@ -12,29 +12,37 @@
   <body>
     <div class="container">
       <h1>Aren't you hungry?</h1>
-      <form id="pizza-form">
-        <h4>What would you like on your pizza?</h4>
-        <input type="checkbox" id="1" name="regular-topping" value="pepperoni">
-        <label for="1">Pepperoni</label>
+      <div class="row">
+        <div class="col s7">
+          <form id="pizza-form">
+            <h4>What would you like on your pizza?</h4>
+            <input type="checkbox" id="1" name="regular-topping" value="pepperoni">
+            <label for="1">Pepperoni</label>
 
-        <p>
-          <input type="radio" name="size" value="small" id="small">
-          <label for="small">Small</label>
-          <input type="radio" name="size" value="medium" id="medium">
-          <label for="medium">Medium</label>
-          <input type="radio" name="size" value="large" id="large">
-          <label for="large">Large</label>
-        </p>
+            <p>
+              <input type="radio" name="size" value="small" id="small">
+              <label for="small">Small</label>
+              <input type="radio" name="size" value="medium" id="medium">
+              <label for="medium">Medium</label>
+              <input type="radio" name="size" value="large" id="large">
+              <label for="large">Large</label>
+            </p>
 
-        <button id="button-price-check" type="submit" class="btn waves-effect waves-light orange lighten-1 black-text">Check your total</button>
-      </form>
-
-      <form id="subtotal-form">
-        <div id="subtotal-list">
-          This is where you'll see your pizza.
+            <button id="button-price-check" type="submit" class="btn waves-effect waves-light orange lighten-1 black-text">Check your total</button>
+          </form>
         </div>
-        <button type="submit">Submit</button>
-      </form>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <form id="subtotal-form">
+            <div id="subtotal-list">
+              This is where you'll see your pizza.
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
 
   </body>
