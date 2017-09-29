@@ -2,7 +2,7 @@ function Pizza(item, special, size){
   this.topping = item;
   this.specialTopping = special;
   this.size = size;
-  this.price = 14;
+  this.price = 0;
   this.quantity = 1;
 }
 
@@ -14,16 +14,21 @@ Pizza.prototype.getPrice = function () {
     this.price += ((this.topping.length - 1) * 1.25);
   }
   var sizes = ["s", "m", "l"];
-  var priceMod = [1, 1.2, 1.4];
+  var priceMod = [14, 17, 20];
   for (var index = 0; index < 3; index++) {
     if (this.size === sizes[index]) {
-      this.price *= priceMod[index];
+      this.price += priceMod[index];
     }
   }
   this.price *= this.quantity;
   return this.price;
 }
 
+Pizza.prototype.resetPrice = function () {
+
+}
+
+// front-end
 $(document).ready(function() {
   $("#pizza-form").submit(function(event){
     event.preventDefault();
@@ -40,9 +45,15 @@ $(document).ready(function() {
     var pizzaSize = $("input:radio:checked").val();
 
     var pizzaOrder = new Pizza(pizzaTopping, pizzaSpecialTopping, pizzaSize);
-    $("#subtotal-list").empty();
-    $("#subtotal-list").append("$" + pizzaOrder.getPrice().toFixed(2) + "<br>");
-    $("#subtotal-form").show();
+    console.log(pizzaOrder.topping);
+
+    if ((!pizzaOrder.topping[0] && !pizzaOrder.topping[0]) || !pizzaOrder.size) {
+      alert("Oops, looks like you missed something!");
+    } else {
+      $("#subtotal-list").empty();
+      $("#subtotal-list").append("$" + pizzaOrder.getPrice().toFixed(2) + "<br>");
+      $("#subtotal-form").show();
+    }
   });
 
   $("#button-price-reset").click(function(){
