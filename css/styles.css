@@ -1,3 +1,12 @@
 label {
   color: black;
 }
+
+#subtotal-list {
+  font-size: 30px;
+}
+
+.subtotal {
+  width: 150px;
+  text-align: center;
+}

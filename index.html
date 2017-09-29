@@ -11,11 +11,14 @@
   </head>
   <body>
     <div class="container">
-      <h1>Aren't you hungry?</h1>
+      <div class="card red">
+        <h1>Aren't you hungry?</h1>
+      </div>
       <div class="row">
         <div class="col s8">
           <form id="pizza-form">
-            <h4>What would you like on your pizza?</h4>
+            <h4>What toppings would you like?</h4>
+            <h6>If more than 2 regular topping are selected, each additional toppings will be $1.25 extra. <span class="red lighten-4">Special toppings</span> are each $2.00 extra.</h6>
             <div class="row">
               <div class="col s4">
                 <p>
@@ -107,8 +110,10 @@
       <div class="row">
         <div class="col s12">
           <form id="subtotal-form">
-            <div id="subtotal-list">
-              This is where you'll see your pizza.
+            <div class="card-panel amber lighten-5 subtotal">
+              <div id="subtotal-list">
+                This is where you'll see your pizza.
+              </div>
             </div>
             <button type="submit">Submit</button>
           </form>
