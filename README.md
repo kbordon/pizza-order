@@ -1,12 +1,12 @@
 # _Pizza Order_
 
-#### _A pizza ordering application for Epicodus Object-Oriented JavaScript Coe Review , 09.29.2017_
+#### _A pizza ordering application for Epicodus Object-Oriented JavaScript Code Review , 09.29.2017_
 
 #### By _**Kimberly Bordon**_
 
 ## Description
 
-_This is an application that employs object-oriented programming to take a user's pizza order. The user inputs the toppings and size they prefer, and jQuery takes it and stores it in an object. It uses a unique method to calculate the user's total, and displays the options and results with Materialize._
+_This is an application that employs object-oriented programming to take a user's pizza order. The user inputs the toppings, and size they prefer, and jQuery takes it, and stores it in an object. It uses a unique method to calculate the user's total, and displays the options and results with Materialize._
 
 ## GH-Page
 
