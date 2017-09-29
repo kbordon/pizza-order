@@ -7,15 +7,16 @@ function Pizza(item, size){
 $(document).ready(function() {
   $("#pizza-form").submit(function(event){
     event.preventDefault();
-    debugger;
+    var pizzaTopping;
     $("input:checkbox[name=regular-topping]:checked").each(function() {
-      var pizzaTopping = $(this).val();
+      pizzaTopping = $(this).val();
     });
 
-    // var pizzaSize = $("input:radio:checked").val();
+    alert(pizzaTopping);
 
+    var pizzaSize = $("input:radio:checked").val();
     var pizzaOrder = new Pizza(pizzaTopping, pizzaSize);
-    alert(pizzaOrder);
+    console.log(pizzaOrder);
   });
 
 
