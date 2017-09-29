@@ -14,7 +14,7 @@ Pizza.prototype.getPrice = function () {
     this.price += ((this.topping.length - 1) * 1.25);
   }
   var sizes = ["s", "m", "l"];
-  var priceMod = [14, 17, 20];
+  var priceMod = [17, 20, 23];
   for (var index = 0; index < 3; index++) {
     if (this.size === sizes[index]) {
       this.price += priceMod[index];
@@ -47,8 +47,8 @@ $(document).ready(function() {
     var pizzaOrder = new Pizza(pizzaTopping, pizzaSpecialTopping, pizzaSize);
     console.log(pizzaOrder.topping);
 
-    if ((!pizzaOrder.topping[0] && !pizzaOrder.topping[0]) || !pizzaOrder.size) {
-      alert("Oops, looks like you missed something!");
+    if (!pizzaOrder.size) {
+      alert("Oops, looks like you didn't enter a size!");
     } else {
       $("#subtotal-list").empty();
       $("#subtotal-list").append("$" + pizzaOrder.getPrice().toFixed(2) + "<br>");
