@@ -8,9 +8,10 @@ body {
   background-position: top;
   background-size: cover;
 }
-
+#pizza-form {
+  margin-bottom: 50px;
+}
 #subtotal-form {
-  display: none;
   margin-bottom: 50px;
 }
 #subtotal-list {
@@ -22,8 +23,8 @@ body {
 }
 
 .subtotal {
-  width: 150px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .pizza-info {
