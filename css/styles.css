@@ -9,14 +9,13 @@ body {
   background-size: cover;
 }
 #pizza-form {
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 #subtotal-form {
   margin-bottom: 50px;
 }
-#subtotal-list {
-  font-size: 30px;
-}
+
 .top {
   text-align: center;
   letter-spacing: 5px;

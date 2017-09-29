@@ -45,7 +45,6 @@ $(document).ready(function() {
     var pizzaSize = $("input:radio:checked").val();
 
     var pizzaOrder = new Pizza(pizzaTopping, pizzaSpecialTopping, pizzaSize);
-    console.log(pizzaOrder.topping);
 
     if (!pizzaOrder.size) {
       alert("Oops, looks like you didn't enter a size!");
@@ -57,8 +56,8 @@ $(document).ready(function() {
   });
 
   $("#button-price-reset").click(function(){
-    $("#subtotal-form").hide();
-  })
+    $("#subtotal-list").text("$0.00");
+  });
 
 
 });

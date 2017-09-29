@@ -15,13 +15,11 @@
         <h1><i class="small material-icons">people</i> the people's pizza <i class="small material-icons">favorite</i></h1>
       </div>
     </div>
+
     <div class="container white">
       <div class="row">
         <div class="col s7 offset-s1">
           <form id="pizza-form">
-            <div class="card-panel yellow lighten-5 pizza-info">
-              Each of our pizzas are freshly made once you order it! We roll and hand-toss the pies, and top them with our housemade zesty red sauce, and a flavorful blend of mozzarella, provolone and Parmesan cheese.
-            </div>
             <h5>What toppings would you like?<p>
             <h6>If cheese is your only true desire, feel free to skip this. If more than 2 regular toppings are selected, each additional topping will be $1.25 extra. <span class="red lighten-4">Special toppings</span> are each $2.00 extra.</h6>
             <div class="row">
@@ -113,19 +111,18 @@
           </form>
         </div>
       <div class="col s3">
-        <!-- <div class="row">
-          <div class="col s10 offset-s1"> -->
-            <form id="subtotal-form">
-              <div class="card-panel blue lighten-5 subtotal">
-                <div id="subtotal-list">
-                  This is where you'll see your pizza.
-                </div>
-              </div>
-              <button id="button-final-submit" type="submit" class="btn waves-effect waves-light red white-text right">Submit</button>
-            </form>
-          <!-- </div> -->
-        <!-- </div> -->
+        <div class="card-panel yellow lighten-5 pizza-info flow-text">
+          Each of our pizzas are freshly made once you order it! We roll and hand-toss the pies, and top them with our housemade zesty red sauce, and a flavorful blend of mozzarella, provolone and Parmesan cheese.
         </div>
+        <form id="subtotal-form">
+          <div class="card blue lighten-5 subtotal">
+            <div class="card-content">
+              <span id="subtotal-list" class="card-title left">$0.00</span>
+              Subtotal
+            </div>
+            <button id="button-final-submit" type="submit" class="btn waves-effect waves-light red white-text right">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
 
