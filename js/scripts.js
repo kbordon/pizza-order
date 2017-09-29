@@ -6,8 +6,8 @@ function Pizza(item, size){
 }
 
 Pizza.prototype.getPrice = function () {
-  if (this.topping.length > 1) {
-    this.price += ((this.topping.length - 1) * 0.75);
+  if (this.topping.length > 2) {
+    this.price += ((this.topping.length - 1) * 1.25);
   }
   var sizes = ["s", "m", "l"];
   var priceMod = [1, 1.2, 1.4];
