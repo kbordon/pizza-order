@@ -6,9 +6,17 @@ function Pizza(item, size){
 }
 
 Pizza.prototype.getPrice = function () {
-  if (this.topping.length > 0) {
-    this.price += ((this.topping.length) * 0.50);
+  if (this.topping.length > 1) {
+    this.price += ((this.topping.length - 1) * 0.50);
   }
+  var sizes = ["s", "m", "l"];
+  var priceMod = [1, 1.2, 1.4];
+  for (var index = 0; index < 3; index++) {
+    if (this.size === sizes[index]) {
+      this.price *= priceMod[index];
+    }
+  }
+  this.price *= this.quantity;
   return this.price;
 }
 

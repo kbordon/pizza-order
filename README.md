@@ -21,13 +21,6 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
   * Small
   * Small
 
-5. It will allow the user to change the quantity of the same pizza.
-  * 2 Pepperoni pizzas
-  * 2 Pepperoni pizzas
-
-4. It will allow the user to add another pizza.
-  * 1 Pineapple and Ham pizza
-
 3. It will allow the user click a button to see the final cost of their pizza selections.
   * Check Price
   * $32.00
@@ -39,6 +32,14 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 5. It show the user an order confirmation upon submitting their order with the details of their order.
   * submit
   * Your order for 2 x Large Cheese Pizzas at $25.00 has been received.
+
+5. It will allow the user to change the quantity of the same pizza.
+  * 2 Pepperoni pizzas
+  * 2 Pepperoni pizzas
+
+4. It will allow the user to add another pizza.
+  * 1 Pineapple and Ham pizza
+
 5. It will allow the user to cancel their order within a certain time block.
 
 6. It will allow the user to add
