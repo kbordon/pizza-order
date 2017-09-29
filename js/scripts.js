@@ -1,5 +1,6 @@
-function Pizza(item){
+function Pizza(item, size){
   this.topping = item;
+  this.size = size;
   this.price = 0;
 }
 
@@ -8,6 +9,8 @@ $(document).ready(function() {
     var pizzaTopping = $(this).val();
   });
 
-  var pizzaOrder = new Pizza(pizzaTopping);
+  val pizzaSize = $("input:radio:checked").val();
+
+  var pizzaOrder = new Pizza(pizzaTopping, pizzaSize);
   console.log(pizzaOrder);
 });
