@@ -24,10 +24,6 @@ Pizza.prototype.getPrice = function () {
   return this.price;
 }
 
-Pizza.prototype.resetPrice = function () {
-
-}
-
 // front-end
 $(document).ready(function() {
   $("#pizza-form").submit(function(event){
