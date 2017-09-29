@@ -5,12 +5,18 @@ function Pizza(item, size){
 }
 
 $(document).ready(function() {
-  $("input:checkbox[name=regular-topping]:checked").each(function() {
-    var pizzaTopping = $(this).val();
+  $("#pizza-form").submit(function(event){
+    event.preventDefault();
+    debugger;
+    $("input:checkbox[name=regular-topping]:checked").each(function() {
+      var pizzaTopping = $(this).val();
+    });
+
+    // var pizzaSize = $("input:radio:checked").val();
+
+    var pizzaOrder = new Pizza(pizzaTopping, pizzaSize);
+    alert(pizzaOrder);
   });
 
-  val pizzaSize = $("input:radio:checked").val();
 
-  var pizzaOrder = new Pizza(pizzaTopping, pizzaSize);
-  console.log(pizzaOrder);
 });
