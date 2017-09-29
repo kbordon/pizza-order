@@ -1,19 +1,23 @@
 label {
   color: black;
 }
-/*body {
+body {
   background-image: url("../img/pizza.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
   background-size: cover;
-}*/
+}
 
 #subtotal-form {
   display: none;
 }
 #subtotal-list {
   font-size: 30px;
+}
+.top {
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 .subtotal {

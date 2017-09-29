@@ -42,7 +42,12 @@ $(document).ready(function() {
     var pizzaOrder = new Pizza(pizzaTopping, pizzaSpecialTopping, pizzaSize);
     $("#subtotal-list").empty();
     $("#subtotal-list").append("$" + pizzaOrder.getPrice().toFixed(2) + "<br>");
+    $("#subtotal-form").show();
   });
+
+  $("#button-price-reset").click(function(){
+    $("#subtotal-form").hide();
+  })
 
 
 });
