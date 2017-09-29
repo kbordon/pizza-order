@@ -20,7 +20,9 @@ body {
   text-align: center;
   letter-spacing: 5px;
 }
-
+.back-space {
+  display: none;
+}
 .subtotal {
   text-align: center;
   margin-top: 50px;
@@ -30,3 +32,12 @@ body {
   font-size: 18px;
   margin-top: 50px;
 }
+
+.submit {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*button:hover {
+  font-style: italic;
+}*/

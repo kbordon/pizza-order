@@ -49,8 +49,8 @@ $(document).ready(function() {
     if (!pizzaOrder.size) {
       alert("Oops, looks like you didn't enter a size!");
     } else {
-      $("#subtotal-list").empty();
-      $("#subtotal-list").append("$" + pizzaOrder.getPrice().toFixed(2) + "<br>");
+      $("#subtotal-list, .total").empty();
+      $("#subtotal-list, .total").append("$" + pizzaOrder.getPrice().toFixed(2));
       $("#subtotal-form").show();
     }
   });
@@ -59,5 +59,13 @@ $(document).ready(function() {
     $("#subtotal-list").text("$0.00");
   });
 
+  $("#button-final-submit").click(function() {
+    $(".front-space").hide();
+    $(".back-space").fadeIn();
+  });
+
+  $("#button-go-back").click(function() {
+    location.reload();
+  });
 
 });
