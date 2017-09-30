@@ -27,7 +27,7 @@ A live preview can be viewed [here](https://kbordon.github.io/pizza-order/) or b
 
 * Using terminal or your preferred shell, clone this repository.
   * Alternatively, you can use a browser to download the .zip file from the Github web interface.
-* Using shell, explorer, or finder, navigate to the order-pizza folder.
+* Using shell, explorer, or finder, navigate to the pizza-order folder.
 * Open the folder, and double-click open index.html with your browser.
 * Follow page per instructions.
 
