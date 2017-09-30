@@ -10,7 +10,7 @@ _This is an application that employs object-oriented programming to take a user'
 
 ## GH-Page
 
-A live preview can be viewed [here](https://kbordon.github.io/order-pizza/) or by copying this url: https://kbordon.github.io/order-pizza/
+A live preview can be viewed [here](https://kbordon.github.io/pizza-order/) or by copying this url: https://kbordon.github.io/pizza-order/
 
 
 ## Specifications
